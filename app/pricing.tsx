@@ -73,13 +73,13 @@ const pricing = () => {
               <div className={plan.style}>
                 <div className="text-4xl md:text-3xl flex items-center font-medium">
                   {plan.name}
-                  {plan.feature === "Contact Us" && (
+                  {/* {plan.feature === "Contact Us" && (
                     <div className="text-sm font-medium text-blue-600 bg-blue-100 px-2 py-1 rounded-full ml-4 items-center">
                       Contact Us
                     </div>
-                  )}
+                  )} */}
                 </div>
-                <div className="text-3xl pt-6">{plan.price}</div>
+                {/* <div className="text-3xl pt-6">{plan.price}</div> */}
                 <div className="py-6">{plan.description}</div>
                 <ul>
                   {plan.features.map((feature) => (
