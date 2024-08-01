@@ -1,5 +1,8 @@
 import { HoverEffect } from "@/components/ui/card-hover-effect";
-import { PiAppStoreLogo, PiHeadsetFill, PiLock, PiMegaphone, PiMonitor, PiStorefront } from "react-icons/pi";
+import { PiAppStoreLogo, PiHeadsetFill, PiLock, PiMegaphone, PiMonitor, PiStorefront,PiChalkboardTeacherLight } from "react-icons/pi";
+import { FaRegMoneyBillAlt } from "react-icons/fa";
+import { MdOutlineAdminPanelSettings } from "react-icons/md";
+
 
 export function CardHoverEffectDemo() {
   return (
@@ -17,7 +20,7 @@ export const projects = [
       
       },
       {
-        icon : <div className="bg-green-100 p-4 rounded-full"><PiStorefront className="w-8 h-8 text-green-600" /></div>,
+        icon : <div className="bg-green-100 p-4 rounded-full"><FaRegMoneyBillAlt className="w-8 h-8 text-green-600" /></div>,
         title: "Integration & ​Payment System",
         description:
           "You will Learn how to Integrate ​Payment Apps into your store and ​automate Products Fulfilment.",
@@ -31,24 +34,24 @@ export const projects = [
       
       },
       {
-        icon : <div className="bg-green-100 p-4 rounded-full"><PiMegaphone className="w-8 h-8 text-green-600" /></div>,
+        icon : <div className="bg-green-100 p-4 rounded-full"><MdOutlineAdminPanelSettings className="w-8 h-8 text-green-600" /></div>,
         title: "Business Administration",
         description:
-          "We offer social media management and ad creation services. We can help you grow your social media presence and reach new customers.",
+          "Receive guidance from experienced Shopify mentors with personalized feedback and one-on-one sessions.",
       
       },
       {
-        icon : <div className="bg-green-100 p-4 rounded-full"><PiAppStoreLogo className="w-8 h-8 text-green-600" /></div>,
-        title: "App Development",
+        icon : <div className="bg-green-100 p-4 rounded-full"><PiChalkboardTeacherLight className="w-8 h-8 text-green-600" /></div>,
+        title: "Mentorship",
         description:
-          "We build custom mobile apps for iOS and Android. Our apps are designed to be user-friendly and performant.",
+          "Learn essential management techniques, financial planning, and strategic decision-making for your store.",
       
       },
       {
         icon : <div className="bg-green-100 p-4 rounded-full"><PiHeadsetFill className="w-8 h-8 text-green-600" /></div>,
         title: "Support",
         description:
-          "We offer support for all our clients. We are here to help you with any issues or questions you may have.",
+          "Access live Q&A sessions, a community forum, and 24/7 assistance to help you stay on track.",
      
       },
 ];

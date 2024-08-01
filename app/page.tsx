@@ -32,6 +32,7 @@ export default function Home() {
   const brandsRef = useRef<HTMLDivElement>(null);
   const servicesRef = useRef<HTMLDivElement>(null);
   const pricingRef = useRef<HTMLDivElement>(null);
+  const faqRef = useRef<HTMLDivElement>(null);
 
   const scrollToAbout = () => {
     AboutnRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -61,6 +62,10 @@ export default function Home() {
     pricingRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const scrollToFaq = () => {
+    faqRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
 
   // Function to scroll to Services section
   const scrollToServices = () => {
@@ -70,11 +75,12 @@ export default function Home() {
   return (
     <div className="w-full md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
       <Navbar
-        scrollToAbout={scrollToWebsiteDesign}
-        scrollToWebsiteDesign={scrollToWebsiteDesign}
+        scrollToAbout={scrollToAbout}
+        // scrollToWebsiteDesign={scrollToWebsiteDesign}
         scrollToGraphicDesign={scrollToGraphicDesign}
         scrollToShopifyStores={scrollToShopifyStores}
-        scrollTopricing={scrollToPricing}
+        scrollToPricing={scrollToPricing}
+        scrollToFaq={scrollToFaq}
         scrollToBrands={scrollToBrands}
         scrollToServices={scrollToServices}
       />
@@ -110,9 +116,9 @@ export default function Home() {
           <Services />
         </div>
 
-        <div ref={websiteDesignRef}>
+        {/* <div ref={websiteDesignRef}>
           <WebsiteDesign />
-        </div>
+        </div> */}
 
         <div ref={pricingRef}>
           <Pricing/>
@@ -126,7 +132,7 @@ export default function Home() {
         </div> */}
         
         <InfiniteMovingCardsDemo />
-        <FAQS />
+        <FAQS ref={faqRef}/>
       </div>
     </div>
   );
