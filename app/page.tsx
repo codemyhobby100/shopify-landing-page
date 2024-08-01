@@ -26,10 +26,10 @@ export default function Home() {
     setDropdownVisible(false);
   };
   const AboutnRef = useRef<HTMLDivElement>(null);
-  const websiteDesignRef = useRef<HTMLDivElement>(null);
-  const graphicDesignRef = useRef<HTMLDivElement>(null);
+  // const websiteDesignRef = useRef<HTMLDivElement>(null);
+  // const graphicDesignRef = useRef<HTMLDivElement>(null);
   const shopifyStoresRef = useRef<HTMLDivElement>(null);
-  const brandsRef = useRef<HTMLDivElement>(null);
+  // const brandsRef = useRef<HTMLDivElement>(null);
   const servicesRef = useRef<HTMLDivElement>(null);
   const pricingRef = useRef<HTMLDivElement>(null);
   const faqRef = useRef<HTMLDivElement>(null);
@@ -38,25 +38,25 @@ export default function Home() {
     AboutnRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const scrollToWebsiteDesign = () => {
-    websiteDesignRef.current?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-      inline: "nearest",
-    });
-  };
+  // const scrollToWebsiteDesign = () => {
+  //   websiteDesignRef.current?.scrollIntoView({
+  //     behavior: "smooth",
+  //     block: "start",
+  //     inline: "nearest",
+  //   });
+  // };
 
-  const scrollToGraphicDesign = () => {
-    graphicDesignRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
+  // const scrollToGraphicDesign = () => {
+  //   graphicDesignRef.current?.scrollIntoView({ behavior: "smooth" });
+  // };
 
   const scrollToShopifyStores = () => {
     shopifyStoresRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const scrollToBrands = () => {
-    brandsRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
+  // const scrollToBrands = () => {
+  //   brandsRef.current?.scrollIntoView({ behavior: "smooth" });
+  // };
 
   const scrollToPricing = () => {
     pricingRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -77,11 +77,11 @@ export default function Home() {
       <Navbar
         scrollToAbout={scrollToAbout}
         // scrollToWebsiteDesign={scrollToWebsiteDesign}
-        scrollToGraphicDesign={scrollToGraphicDesign}
+        // scrollToGraphicDesign={scrollToGraphicDesign}
         scrollToShopifyStores={scrollToShopifyStores}
         scrollToPricing={scrollToPricing}
         scrollToFaq={scrollToFaq}
-        scrollToBrands={scrollToBrands}
+        // scrollToBrands={scrollToBrands}
         scrollToServices={scrollToServices}
       />
 

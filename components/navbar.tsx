@@ -9,10 +9,7 @@ import DropDownMenu from "./drop-down-menu";
 
 interface NavbarProps {
   scrollToAbout: () => void;
-  scrollToWebsiteDesign: () => void;
-  scrollToGraphicDesign: () => void;
   scrollToShopifyStores: () => void;
-  scrollToBrands: () => void;
   scrollToFaq: () => void;
   scrollToPricing: () => void;
   scrollToServices: () => void; // Define scrollToServices function
@@ -20,10 +17,7 @@ interface NavbarProps {
 
 const Navbar = ({
   scrollToAbout,
-  scrollToWebsiteDesign,
-  scrollToGraphicDesign,
   scrollToShopifyStores,
-  scrollToBrands,
   scrollToFaq,
   scrollToPricing,
   scrollToServices, // Add scrollToServices to props
