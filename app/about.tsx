@@ -2,6 +2,7 @@ import React from 'react';
 import { MdCheckCircleOutline } from "react-icons/md";
 import { checklistItems } from './data';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const about = () => {
   return (
@@ -29,6 +30,13 @@ const about = () => {
               </div>
             </div>
           ))}
+          <Link
+            href={"/book"}
+            className="cursor-pointer flex items-start ml-16 justify-center border w-48 p-2 ml-0 my-6 text-white"
+            >
+            Get Course
+        </Link>
+
         </div>
       </div>
     </div>

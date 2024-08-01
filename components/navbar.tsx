@@ -60,22 +60,18 @@ const Navbar = ({
           <div onClick={scrollToAbout} className="hover:text-gray-50">
             About
           </div>
-          <div onClick={scrollToWebsiteDesign} className="hover:text-gray-50">
+          {/* <div onClick={scrollToWebsiteDesign} className="hover:text-gray-50">
             Website Design
-          </div>
-          <div onClick={scrollToGraphicDesign} className="hover:text-gray-50">
-            Graphic Design
-          </div>
-
+          </div> */}
           <div onClick={scrollToShopifyStores} className="hover:text-gray-50">
-            Shopify Stores
+            Testimonials
           </div>
           <div onClick={scrollToBrands} className="hover:text-gray-50">
-            Brands
+            FAQ
           </div>
 
           <Link href="/pricing" className="hover:text-gray-50">
-            Pricing
+            Courses
           </Link>
         </div>
 

@@ -11,6 +11,7 @@ import About from "./about";
 import WebsiteDesign from "./website-design";
 import GraphicDesign from "./graphic-design";
 import ShopifyStores from "./shopify-stores";
+import Pricing from "./pricing";
 import Brands from "./brands";
 import Services from "./services";
 import FAQS from "./faq";
@@ -30,6 +31,7 @@ export default function Home() {
   const shopifyStoresRef = useRef<HTMLDivElement>(null);
   const brandsRef = useRef<HTMLDivElement>(null);
   const servicesRef = useRef<HTMLDivElement>(null);
+  const pricingRef = useRef<HTMLDivElement>(null);
 
   const scrollToAbout = () => {
     AboutnRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -55,6 +57,11 @@ export default function Home() {
     brandsRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const scrollToPricing = () => {
+    pricingRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+
   // Function to scroll to Services section
   const scrollToServices = () => {
     servicesRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -67,6 +74,7 @@ export default function Home() {
         scrollToWebsiteDesign={scrollToWebsiteDesign}
         scrollToGraphicDesign={scrollToGraphicDesign}
         scrollToShopifyStores={scrollToShopifyStores}
+        scrollTopricing={scrollToPricing}
         scrollToBrands={scrollToBrands}
         scrollToServices={scrollToServices}
       />
@@ -105,12 +113,17 @@ export default function Home() {
         <div ref={websiteDesignRef}>
           <WebsiteDesign />
         </div>
+
+        <div ref={pricingRef}>
+          <Pricing/>
+        </div>
+        
         {/* <div ref={graphicDesignRef}>
           <GraphicDesign />
         </div> */}
-        <div ref={brandsRef}>
+        {/* <div ref={brandsRef}>
           <Brands />
-        </div>
+        </div> */}
         
         <InfiniteMovingCardsDemo />
         <FAQS />
