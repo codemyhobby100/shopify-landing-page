@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { useState, useRef } from "react";
 import Navbar from "@/components/navbar";
@@ -66,7 +66,6 @@ export default function Home() {
     faqRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-
   // Function to scroll to Services section
   const scrollToServices = () => {
     servicesRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -91,7 +90,8 @@ export default function Home() {
           Unlock the Secrets to a Profitable Dropshipping Business
         </div>
         <p className="mt-4 text-lg font-normal  text-neutral-300 max-w-lg text-center mx-auto px-4">
-          Discover how you can create a personalized dropshipping empire and become part of the new generation of young millionaires
+          Discover how you can create a personalized dropshipping empire and
+          become part of the new generation of young millionaires
         </p>
 
         <Link
@@ -112,7 +112,7 @@ export default function Home() {
           <ShopifyStores />
         </div>
 
-        <div id ='services'>
+        <div id="services">
           <Services />
         </div>
 
@@ -121,19 +121,19 @@ export default function Home() {
         </div> */}
 
         <div ref={pricingRef}>
-          <Pricing/>
+          <Pricing />
         </div>
-        
+
         {/* <div ref={graphicDesignRef}>
           <GraphicDesign />
         </div> */}
         {/* <div ref={brandsRef}>
           <Brands />
         </div> */}
-        
+
         <InfiniteMovingCardsDemo />
         <div ref={faqRef}>
-          <FAQS/>
+          <FAQS />
         </div>
       </div>
     </div>
