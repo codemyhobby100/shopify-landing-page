@@ -132,7 +132,9 @@ export default function Home() {
         </div> */}
         
         <InfiniteMovingCardsDemo />
-        <FAQS ref={faqRef}/>
+        <div ref={faqRef}>
+          <FAQS/>
+        </div>
       </div>
     </div>
   );
