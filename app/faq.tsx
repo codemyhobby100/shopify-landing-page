@@ -29,7 +29,7 @@ const FAQS = () => {
               How soon can I start ​seeing some results?
             </AccordionTrigger>
             <AccordionContent className="text-left text-lg md:text-xl">
-              We've seen students get up ​and running in as fast as 7 ​days and start making sales ​in their first weeks but ​building a real business ​takes time.​
+              We&apos;ve seen students get up ​and running in as fast as 7 ​days and start making sales ​in their first weeks but ​building a real business ​takes time.​
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
