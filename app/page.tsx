@@ -16,6 +16,9 @@ import Brands from "./brands";
 import Services from "./services";
 import FAQS from "./faq";
 import { InfiniteMovingCardsDemo } from "./snippets/infinite-moving-card-snippet";
+import { AnimatedTooltip } from "./snippets/animated-tooltip";
+import { FaStar } from "react-icons/fa";
+
 
 export default function Home() {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
@@ -38,25 +41,10 @@ export default function Home() {
     AboutnRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-  // const scrollToWebsiteDesign = () => {
-  //   websiteDesignRef.current?.scrollIntoView({
-  //     behavior: "smooth",
-  //     block: "start",
-  //     inline: "nearest",
-  //   });
-  // };
-
-  // const scrollToGraphicDesign = () => {
-  //   graphicDesignRef.current?.scrollIntoView({ behavior: "smooth" });
-  // };
 
   const scrollToShopifyStores = () => {
     shopifyStoresRef.current?.scrollIntoView({ behavior: "smooth" });
   };
-
-  // const scrollToBrands = () => {
-  //   brandsRef.current?.scrollIntoView({ behavior: "smooth" });
-  // };
 
   const scrollToPricing = () => {
     pricingRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -70,17 +58,41 @@ export default function Home() {
   const scrollToServices = () => {
     servicesRef.current?.scrollIntoView({ behavior: "smooth" });
   };
+  const items = [
+    {
+      id: 1,
+      name: 'Samuel',
+      // designation: 'Developer',
+      image: '/images/user1.jpg',
+    },
+    {
+      id: 2,
+      name: 'Blessing',
+      // designation: 'Designer',
+      image: '/images/user2.jpg',
+    },
+    {
+      id: 3,
+      name: 'Babatunde',
+      // designation: 'Designer',
+      image: '/images/user3.jpg',
+    },
+    {
+      id: 4,
+      name: 'Chisom',
+      // designation: 'Designer',
+      image: '/images/user4.jpg',
+    },
+    // add more items as needed
+  ];
 
   return (
     <div className="w-full md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
       <Navbar
         scrollToAbout={scrollToAbout}
-        // scrollToWebsiteDesign={scrollToWebsiteDesign}
-        // scrollToGraphicDesign={scrollToGraphicDesign}
         scrollToShopifyStores={scrollToShopifyStores}
         scrollToPricing={scrollToPricing}
         scrollToFaq={scrollToFaq}
-        // scrollToBrands={scrollToBrands}
         scrollToServices={scrollToServices}
       />
 
@@ -95,11 +107,19 @@ export default function Home() {
         </p>
 
         <Link
-          href={"/book"}
+          href={"/buy"}
           className="cursor-pointer flex items-center justify-center border rounded-full w-48 p-2  mx-auto my-6 text-white "
         >
           Get Course
         </Link>
+        <div className="flex flex-row items-center justify-center mb-10 w-full">
+          <AnimatedTooltip items={items} />
+          <div className="flex space-x-1 pl-10">
+            {[...Array(5)].map((_, index) => (
+              <FaStar key={index}className="text-yellow-500 text-[20px]" />
+            ))}
+          </div>
+        </div>
 
         <div className="w-full pt-20">
           <SliderOne />

@@ -39,7 +39,7 @@ const Navbar = ({
           <Link className="cursor-pointer" href="/">
             <Image
               priority
-              src="/logo/logo.svg"
+              src="/images/logo.png"
               alt="Logo"
               width={100}
               height={100}
@@ -95,7 +95,7 @@ const Navbar = ({
 
         <div className="hidden md:flex">
           <Link
-            href="/contact"
+            href="/buy"
             className="
             inline-flex h-12 animate-shimmer items-center justify-center 
             rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] 

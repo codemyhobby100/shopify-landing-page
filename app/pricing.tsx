@@ -96,7 +96,7 @@ const pricing = () => {
               <div className={plan.button}>
                 {index === 0 && (
                   <Link
-                    href="https://buy.stripe.com/6oEg1WdsibFr1EYbIK"
+                    href={"/buy"}
                     className="rounded-3xl my-4 py-2 text-white w-full mx-auto items-center flex justify-center bg-gradient-to-r from-emerald-500 to-blue-300"
                   >
                     Get Course
@@ -104,7 +104,7 @@ const pricing = () => {
                 )}
                 {index === 1 && (
                   <Link
-                    href="https://buy.stripe.com/14k2b65ZQ8tf5Ve28c"
+                    href={"/buy"}
                     className="rounded-3xl my-4 py-2 text-white w-full mx-auto items-center flex justify-center bg-gradient-to-r from-emerald-500 to-blue-300"
                   >
                     Get Course
@@ -112,7 +112,7 @@ const pricing = () => {
                 )}
                 {index === 2 && (
                   <Link
-                    href="/contact"
+                    href={"/buy"}
                     className="rounded-3xl my-4 py-2 text-white w-full mx-auto items-center flex justify-center bg-gradient-to-r from-purple-500 to-blue-300"
                   >
                     Get Course

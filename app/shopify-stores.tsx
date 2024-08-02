@@ -37,7 +37,7 @@ const ShopifyStores = () => {
         </div>
 
         <p className="mt-4 text-lg font-normal  text-neutral-800 max-w-lg text-center mx-auto">
-          We create stunning Shopify stores that are designed to convert.
+        BUILD your personalized Dropshipping Business& JOIN the new generation of young millionaires
         </p>
         <div className="md:flex items-center justify-center  px-10 ">
           {stores.map((store, index) => (
