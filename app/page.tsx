@@ -15,6 +15,7 @@ import Pricing from "./pricing";
 import Brands from "./brands";
 import Services from "./services";
 import FAQS from "./faq";
+import Footer from './footer'
 import { InfiniteMovingCardsDemo } from "./snippets/infinite-moving-card-snippet";
 import { AnimatedTooltip } from "./snippets/animated-tooltip";
 import { FaStar } from "react-icons/fa";
@@ -155,6 +156,7 @@ export default function Home() {
         <div ref={faqRef}>
           <FAQS />
         </div>
+        <Footer />
       </div>
     </div>
   );

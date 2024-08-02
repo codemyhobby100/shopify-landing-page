@@ -73,6 +73,7 @@ const GetCourse = (props: Props) => {
             <h1 className="text-4xl mb-4 mt-5 text-white ">
               Shopify Master Course
             </h1>
+            <h2 className="text-white pb-2 text-2xl">$18.99</h2>
             <p className="text-lg mb-6 text-gray-200">
               Our Shopify Master Course provides essential training to equip you
               with the tools and knowledge needed to succeed in dropshipping
